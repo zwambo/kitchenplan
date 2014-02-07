@@ -1,21 +1,20 @@
 groups:
     - bash
     - developer
-    - smartie
 recipes:
     global:
         - dotfiles::sshconfig
     mac_os_x:
         - applications::1password
         - applications::dropbox
-        - applications::evernote
-        - applications::istatmenus4
+        - applications::simplenote
+#        - applications::istatmenus4
         - applications::kaleidoscope
-        - applications::omnigraffle
-        - applications::alfred
+#        - applications::omnigraffle
+#        - applications::alfred
         - applications::totalfinder
         - applications::spotify
-        - applications::bartender
+#        - applications::bartender
 #        - applications::hhvm
         - skylab::default
         - sudo::default
@@ -40,7 +39,7 @@ attributes:
     dotfiles:
         vimusers:
             - root
-            - roderik
+            - zwambo
         kdeploy:
             hostname: dev
         vim:
@@ -52,13 +51,13 @@ attributes:
                 - syntastic: git://github.com/scrooloose/syntastic.git
                 - nerdtree: https://github.com/scrooloose/nerdtree.git
     git:
-        name: Roderik van der Veer
-        email: roderik.van.der.veer@kunstmaan.be
+        name: Oscar Zwambo
+        email: zwambo@gmail.com
     osxdefaults:
-        computername: Mir
+        computername: mb
     authorization:
         sudo:
             users:
-                - roderik
+                - zwambo
             passwordless: true
             include_sudoers_d: true
